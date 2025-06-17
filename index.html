@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="public">
+<head>
+  <meta charset="utf-8">
+  <title>Restaurant</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.min.js"></script>
+  <script src="app.js"></script>
+  <script src="common/user.service.js"></script>
+  <script src="signup/signup.controller.js"></script>
+  <script src="myinfo/myinfo.controller.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <a ui-sref="signup">Sign Up</a> |
+    <a ui-sref="myinfo">My Info</a>
+  </nav>
+  <ui-view></ui-view>
+</body>
+</html>
